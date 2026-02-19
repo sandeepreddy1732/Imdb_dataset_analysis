@@ -24,10 +24,7 @@ The final output is a cleaned dataset ready for database integration and busines
 - `imdb_movies.csv`  
   Original raw IMDB dataset (CSV format).
 
-- `imdb_movies_cleaned.csv`  
-  Cleaned and transformed dataset generated from the notebook.
-
-- `imdbmovies_etl.ipynb`  
+- `PROJECT_P1_IMDB_DATA_ANALYSIS`  
   Main Jupyter notebook that performs ETL processing and analysis.
 
 ---
