@@ -1,46 +1,124 @@
-# IMDB Movie Dataset Analysis (Project 1)
+
+
+
+# IMDB Movie Dataset – ETL & Exploratory Data Analysis
 
 ## Overview
 
-This repository contains an exploratory data analysis and ETL notebook for the IMDB movie dataset. The primary work is performed in the Jupyter notebook which cleans the data, applies business rules, and produces visualizations useful for movie business analysis and dashboarding.
+This project performs **ETL (Extract, Transform, Load)** and **Exploratory Data Analysis (EDA)** on an IMDB movie dataset using Python and Jupyter Notebook.
+
+The notebook processes raw movie data, applies business rules, cleans inconsistencies, and generates analytical insights that can be used for reporting and dashboard development.
+
+The final output is a cleaned dataset ready for database integration and business analysis.
+
+---
 
 ## Repository Contents
 
-- [IMDB Movie Business Rules and dashboard_problems statements.txt](IMDB%20Movie%20Business%20Rules%20and%20dashboard_problems%20statements.txt): Business rules and problem statements for the dashboard.
-- [imdb_ddl.sql](imdb_ddl.sql): DDL for loading the cleaned dataset into a relational database.
-- [imdb_movies.csv](imdb_movies.csv): Original raw dataset (CSV).
-- [imdb_movies_cleaned.csv](imdb_movies_cleaned.csv): Cleaned and preprocessed dataset exported from the notebook.
-- [imdbmovies_etl.ipynb](imdbmovies_etl.ipynb): Main Jupyter notebook performing ETL and analysis.
+- `IMDB Movie Business Rules and dashboard_problems statements.txt`  
+  Contains defined business rules and dashboard problem statements.
+
+- `imdb_ddl.sql`  
+  SQL DDL script to create the database schema for storing cleaned data.
+
+- `imdb_movies.csv`  
+  Original raw IMDB dataset (CSV format).
+
+- `imdb_movies_cleaned.csv`  
+  Cleaned and transformed dataset generated from the notebook.
+
+- `imdbmovies_etl.ipynb`  
+  Main Jupyter notebook that performs ETL processing and analysis.
+
+---
 
 ## Requirements
 
 - Python 3.8+
-- Jupyter or JupyterLab
-- Common Python packages: `pandas`, `matplotlib`, `sql alchemy` (install via pip)
+- Jupyter Notebook or JupyterLab
+- Required Python libraries:
+  - pandas
+  - matplotlib
+  - sqlalchemy
 
-You can create a virtual environment and install packages with:
+---
+
+## Setup Instructions
+
+Create a virtual environment:
 
 ```bash
 python -m venv .venv
 .\.venv\Scripts\activate
-pip install pandas matplotlib sql alchemy jupyter
 ```
 
-## How to run
+Install required packages:
 
-1. Open the notebook: [imdbmovies_etl.ipynb](imdbmovies_etl.ipynb)
-2. Run the cells sequentially to reproduce the ETL steps and visualizations.
-3. After running, the notebook writes a cleaned CSV: [imdb_movies_cleaned.csv](imdb_movies_cleaned.csv).
+```bash
+pip install pandas matplotlib sqlalchemy jupyter
+```
 
-## Notebook highlights
+---
 
-- Data loading and initial inspection from [imdb_movies.csv](imdb_movies.csv).
-- Cleaning steps: handling missing values, standardizing columns, parsing dates, and normalizing numeric fields.
-- Business-rule applications as described in [IMDB Movie Business Rules and dashboard_problems statements.txt](IMDB%20Movie%20Business%20Rules%20and%20dashboard_problems%20statements.txt).
-- Visualizations for release trends, top genres, rating distributions, and revenue analysis.
+## How to Run the Project
 
-## Database
+1. Open the notebook:
+   ```bash
+   imdbmovies_etl.ipynb
+   ```
 
-Use `imdb_ddl.sql` to create the target schema if you want to load the cleaned CSV into a relational database for dashboarding.
+2. Run all cells sequentially to:
+   - Load raw data
+   - Clean and transform the dataset
+   - Apply business rules
+   - Generate visualizations
 
+3. After execution, the cleaned dataset will be exported as:
+   ```bash
+   imdb_movies_cleaned.csv
+   ```
 
+---
+
+## ETL Process Highlights
+
+### Data Cleaning
+- Handling missing values  
+- Removing duplicates  
+- Standardizing column names  
+- Parsing date columns  
+- Normalizing numeric fields  
+
+### Business Rule Implementation
+- Applying validation logic  
+- Deriving calculated fields  
+- Aggregations for analytics  
+- Filtering and transformation as per defined rules  
+
+### Data Visualization
+- Movie release trends  
+- Genre analysis  
+- Rating distribution  
+- Revenue analysis  
+
+---
+
+## Database Integration
+
+To load cleaned data into a relational database:
+
+1. Execute the `imdb_ddl.sql` script to create the schema.
+2. Import `imdb_movies_cleaned.csv` into the database.
+3. Use the database for dashboarding and reporting purposes.
+
+---
+
+## Project Objective
+
+This project demonstrates:
+
+- Practical ETL workflow implementation  
+- Business-rule-driven data transformation  
+- Data validation and cleaning techniques  
+- Analytical insights generation  
+- End-to-end pipeline from raw dataset to database-ready format  
