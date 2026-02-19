@@ -100,16 +100,6 @@ pip install pandas matplotlib sqlalchemy jupyter
 
 ---
 
-## Database Integration
-
-To load cleaned data into a relational database:
-
-1. Execute the `imdb_ddl.sql` script to create the schema.
-2. Import `imdb_movies_cleaned.csv` into the database.
-3. Use the database for dashboarding and reporting purposes.
-
----
-
 ## Project Objective
 
 This project demonstrates:
