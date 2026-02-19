@@ -70,11 +70,6 @@ pip install pandas matplotlib sqlalchemy jupyter
    - Apply business rules
    - Generate visualizations
 
-3. After execution, the cleaned dataset will be exported as:
-   ```bash
-   imdb_movies_cleaned.csv
-   ```
-
 ---
 
 ## ETL Process Highlights
