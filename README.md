@@ -54,9 +54,9 @@ pip install pandas matplotlib sqlalchemy jupyter
 
 1. Open the notebook:
    ```bash
-   imdbmovies_etl.ipynb
+   PROJECT_P1_IMDB_DATA_ANALYSIS.ipynb
    ```
-
+   
 2. Run all cells sequentially to:
    - Load raw data
    - Clean and transform the dataset
