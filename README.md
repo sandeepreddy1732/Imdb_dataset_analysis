@@ -38,18 +38,13 @@ The final output is a structured dataset suitable for analytics and BI dashboard
 - [imdb_ddl.sql](imdb_ddl.sql): DDL for loading the cleaned dataset into a relational database.
 - [imdb_movies.csv](imdb_movies.csv): Original raw dataset (CSV).
 - [imdb_movies_cleaned.csv](imdb_movies_cleaned.csv): Cleaned and preprocessed dataset exported from the notebook.
-- [imdbmovies_etl.ipynb](PROJECT_P1_IMDB_DATA_ANALYSIS.ipynb): Main Jupyter notebook performing ETL and analysis.
+- [PROJECT_P1_IMDB_DATA_ANALYSIS.ipynb](PROJECT_P1_IMDB_DATA_ANALYSIS.ipynb): Main Jupyter notebook performing ETL and analysis.
 
 ---
 
-# Movie Data Analysis Project
+## Steps Followed
 
-## Project Overview
-This project focuses on cleaning, transforming, analyzing, and visualizing a movie dataset using **Python, MySQL, and Matplotlib**.
-
----
-
-## Data Cleaning (Python)
+ ## Data Cleaning (Python)
 
 - Removed duplicate movie records based on **title and release year**
 - Generated missing **movie IDs**
@@ -57,17 +52,13 @@ This project focuses on cleaning, transforming, analyzing, and visualizing a mov
 - Replaced missing **director and actor names** with `"Unknown"`
 - Filled missing **release years** using the **median value**
 
----
-
-## Data Loading (MySQL)
+ ## Data Loading (MySQL)
 
 - Connected Python to MySQL using **SQLAlchemy**
 - Created a cleaned `movies` table
 - Loaded the transformed dataset into MySQL database
 
----
-
-## SQL Analysis
+ ## SQL Analysis
 
 - Identified **top-grossing movies by year**
 - Calculated **average rating by genre**
@@ -75,16 +66,12 @@ This project focuses on cleaning, transforming, analyzing, and visualizing a mov
 - Analyzed **budget vs gross revenue relationship**
 - Determined the **most profitable movie genre**
 
----
-
-## Data Visualization
+ ## Data Visualization
 
 - Created **bar charts, line charts, and scatter plots** using Matplotlib
 - Built simple dashboards to present key business insights
 
----
-
-## Tech Stack
+ ## Tech Stack
 
 - Python 3.8+
 - Jupyter Notebook
