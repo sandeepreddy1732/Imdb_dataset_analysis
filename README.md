@@ -88,6 +88,17 @@ pip install pandas matplotlib sqlalchemy jupyter
 
 ---
 
+### Dashboard Modules & Analysis
+
+🔹 **Dashboard 1: Revenue Analysis**
+
+<img width="571" height="489" alt="image" src="https://github.com/user-attachments/assets/659249b3-8626-4197-9634-b1ba36100628" />
+
+- Top 10 highest grossing movies by year
+- Year-wise revenue trends
+- Comparison of gross revenue across different years
+
+  
 ## Project Objective
 
 This project demonstrates:
