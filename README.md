@@ -12,20 +12,13 @@ The notebook processes raw movie data, applies business rules, cleans inconsiste
 The final output is a cleaned dataset ready for database integration and business analysis.
 
 ---
-
 ## Repository Contents
 
-- `IMDB Movie Business Rules and dashboard_problems statements.txt`  
-  Contains defined business rules and dashboard problem statements.
-
-- `imdb_ddl.sql`  
-  SQL DDL script to create the database schema for storing cleaned data.
-
-- `imdb_movies.csv`  
-  Original raw IMDB dataset (CSV format).
-
-- `PROJECT_P1_IMDB_DATA_ANALYSIS`  
-  Main Jupyter notebook that performs ETL processing and analysis.
+- [IMDB Movie Business Rules and dashboard_problems statements.txt](IMDB%20Movie%20Business%20Rules%20and%20dashboard_problems%20statements.txt): Business rules and problem statements for the dashboard.
+- [imdb_ddl.sql](imdb_ddl.sql): DDL for loading the cleaned dataset into a relational database.
+- [imdb_movies.csv](imdb_movies.csv): Original raw dataset (CSV).
+- [imdb_movies_cleaned.csv](imdb_movies_cleaned.csv): Cleaned and preprocessed dataset exported from the notebook.
+- [imdbmovies_etl.ipynb](PROJECT_P1_IMDB_DATA_ANALYSIS.ipynb): Main Jupyter notebook performing ETL and analysis.
 
 ---
 
