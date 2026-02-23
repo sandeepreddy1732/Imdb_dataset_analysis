@@ -3,15 +3,35 @@
 
 # IMDB Movie Dataset – ETL & Exploratory Data Analysis
 
-## Overview
+## Problem Statement
 
-This project performs **ETL (Extract, Transform, Load)** and **Exploratory Data Analysis (EDA)** on an IMDB movie dataset using Python and Jupyter Notebook.
+The raw IMDB movie dataset contains inconsistencies, missing values, duplicate records, and unstructured fields that make it unsuitable for direct business reporting and dashboard development.
 
-The notebook processes raw movie data, applies business rules, cleans inconsistencies, and generates analytical insights that can be used for reporting and dashboard development.
+The objective of this project is to:
 
-The final output is a cleaned dataset ready for database integration and business analysis.
+- Build a structured **ETL pipeline (Extract, Transform, Load)**
+- Apply defined **business rules and validation logic**
+- Clean and standardize the dataset
+- Generate analytical insights for reporting
+- Prepare a **database-ready cleaned dataset**
+
+This project simulates a real-world data engineering workflow from raw data ingestion to analytics-ready output.
 
 ---
+
+## Project Overview
+
+This project performs:
+
+- **Extract** → Load raw IMDB dataset  
+- **Transform** → Clean, validate, standardize, and apply business logic  
+- **Load** → Export cleaned dataset for relational database integration  
+- **EDA** → Perform exploratory analysis and generate insights  
+
+The final output is a structured dataset suitable for analytics and BI dashboards.
+
+---
+
 ## Repository Contents
 
 - [IMDB Movie Business Rules and dashboard_problems statements.txt](IMDB%20Movie%20Business%20Rules%20and%20dashboard_problems%20statements.txt): Business rules and problem statements for the dashboard.
@@ -22,71 +42,59 @@ The final output is a cleaned dataset ready for database integration and busines
 
 ---
 
-## Requirements
+# Movie Data Analysis Project
+
+## Project Overview
+This project focuses on cleaning, transforming, analyzing, and visualizing a movie dataset using **Python, MySQL, and Matplotlib**.
+
+---
+
+## Data Cleaning (Python)
+
+- Removed duplicate movie records based on **title and release year**
+- Generated missing **movie IDs**
+- Corrected invalid values in **ratings, budget, and gross**
+- Replaced missing **director and actor names** with `"Unknown"`
+- Filled missing **release years** using the **median value**
+
+---
+
+## Data Loading (MySQL)
+
+- Connected Python to MySQL using **SQLAlchemy**
+- Created a cleaned `movies` table
+- Loaded the transformed dataset into MySQL database
+
+---
+
+## SQL Analysis
+
+- Identified **top-grossing movies by year**
+- Calculated **average rating by genre**
+- Found **top directors based on average ratings**
+- Analyzed **budget vs gross revenue relationship**
+- Determined the **most profitable movie genre**
+
+---
+
+## Data Visualization
+
+- Created **bar charts, line charts, and scatter plots** using Matplotlib
+- Built simple dashboards to present key business insights
+
+---
+
+## Tech Stack
 
 - Python 3.8+
-- Jupyter Notebook or JupyterLab
-- Required Python libraries:
-  - pandas
-  - matplotlib
-  - sqlalchemy
+- Jupyter Notebook
+- pandas
+- matplotlib
+- sqlalchemy
+- SQL (DDL for relational loading)
 
 ---
 
-## Setup Instructions
-
-Create a virtual environment:
-
-```bash
-python -m venv .venv
-.\.venv\Scripts\activate
-```
-
-Install required packages:
-
-```bash
-pip install pandas matplotlib sqlalchemy jupyter
-```
-
----
-
-## How to Run the Project
-
-1. Open the notebook:
-   ```bash
-   PROJECT_P1_IMDB_DATA_ANALYSIS.ipynb
-   ```
-   
-2. Run all cells sequentially to:
-   - Load raw data
-   - Clean and transform the dataset
-   - Apply business rules
-   - Generate visualizations
-
----
-
-## ETL Process Highlights
-
-### Data Cleaning
-- Handling missing values  
-- Removing duplicates  
-- Standardizing column names  
-- Parsing date columns  
-- Normalizing numeric fields  
-
-### Business Rule Implementation
-- Applying validation logic  
-- Deriving calculated fields  
-- Aggregations for analytics  
-- Filtering and transformation as per defined rules  
-
-### Data Visualization
-- Movie release trends  
-- Genre analysis  
-- Rating distribution  
-- Revenue analysis  
-
----
 
 ### Dashboard Modules & Analysis
 
@@ -130,12 +138,9 @@ pip install pandas matplotlib sqlalchemy jupyter
 - Evaluate profit margins across genres
 - Compare genre performance trends over time
   
-## Project Objective
+## Project Outcome
 
-This project demonstrates:
-
-- Practical ETL workflow implementation  
-- Business-rule-driven data transformation  
-- Data validation and cleaning techniques  
-- Analytical insights generation  
-- End-to-end pipeline from raw dataset to database-ready format  
+- Implemented structured ETL workflow  
+- Applied real-world data validation logic  
+- Generated business-driven insights  
+- Prepared analytics-ready dataset  
